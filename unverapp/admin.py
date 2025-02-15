@@ -13,7 +13,7 @@ class CursAdmin(admin.ModelAdmin):
     list_display_links = ['title']
     search_fields = ['title']
     list_editable = ['descripions']
-#
+
 
 
 

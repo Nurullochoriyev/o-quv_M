@@ -2,11 +2,22 @@ from django.shortcuts import render
 from .models import *
 def Studentlar(request):
     new=Student.objects.all()
+    new2 = Curs.objects.all()
     data={
+        "dc": new2,
         "db":new,
         "title":"student"
     }
     return render(request,'news/stu.html',context=data)
+
+
+
+
+
+
+
+
+
 
 def Curslar(request):
     new2=Curs.objects.all()
@@ -15,6 +26,8 @@ def Curslar(request):
         "title":"curslar"
     }
     return render(request,'news/cur.html',context=data2)
+
+
 
 
 
