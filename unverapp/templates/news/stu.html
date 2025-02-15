@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+{% for item in db %}
+<div>
+    <p>{{item.name}}</p>
+    <p>{{item.tel_nomer}}</p>
+    <p>{{item.email}}</p>
+    <p>{{item.created_ad}}</p>
+    <p>{{item.updated_ad}}</p>
+    <hr>
+
+
+</div>
+{% endfor %}
+</body>
+</html>

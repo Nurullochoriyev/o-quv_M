@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+
+
+
+
+{% for item in dc %}
+<div>
+    <p>{{item.title}}</p>
+    <p>{{item.start_time}}</p>
+    <p>{{item.end_time}}</p>
+    <p>{{item.descripions}}</p>
+    <hr>
+</div>
+{% endfor %}
+</body>
+</html>
